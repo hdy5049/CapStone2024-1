@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 지도 - Q&A 방식</title>
+  <!-- 외부 CSS 파일 연결 -->
+  <link rel="stylesheet" href="maps.css">
+  <!-- FontAwesome 아이콘 사용 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- 네이버 지도 API -->
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2lbq9vbwaq"></script>
+</head>
+<body>
+  <!-- 지도 및 컨트롤 패널 -->
+  <div id="map">
+    <!-- 지도 위에 제목 추가 -->
+    <div id="title">
+      <h2>네이버 지도 API 프로젝트</h2>
+    </div>
+    <div id="controls">
+      <div id="traffic-controls">
+        <button class="btn" id="toggleTraffic">교통 정보 켜기/끄기</button>
+      </div>
+      <div id="map-type-controls">
+        <select class="select-box" id="mapType">
+          <option value="normal">일반 지도</option>
+          <option value="satellite">위성 지도</option>
+          <option value="terrain">지형도</option>
+          <option value="hybrid">하이브리드 지도</option>
+        </select>
+      </div>
+   
+      <div id="route-controls">
+        <input type="text" id="start" placeholder="출발지">
+        <input type="text" id="end" placeholder="도착지">
+        <button class="btn" id="findRoute">경로 탐색</button>
+      </div>
+      <!-- Q&A 섹션 추가 -->
+      <div id="qna-controls">
+        <input type="text" id="userQuestion" placeholder="경로 또는 장소에 대한 질문 입력">
+        <button class="btn" id="qnaBtn"><i class="fas fa-question-circle"></i> 질문하기</button> <!-- ID를 qnaBtn으로 수정 -->
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- 경로 탐색창 토글 버튼 -->
+  <button id="toggleRoutePanel" class="btn panel-toggle">경로 탐색 창 열기</button>
+  
+  <div id="result"></div>
+
+  <div id="route-summary"></div>
+
+  <!-- 조원 정보 섹션 -->
+  <div id="team-info">
+    <h3>프로젝트 팀원 소개</h3>
+    <ul>
+      <li>이용민</li>
+      <li>김도건</li>
+      <li>정성환</li>
+      <li>홍도영</li>
+    </ul>
+  </div>
+  
+  </div>
+
+  <!-- JavaScript 파일 연결 -->
+  <script src="maps.js"></script>
+</body>
+</html>
+z`

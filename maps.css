@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #map {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    border: 1px solid #ccc;
+  }
+  
+  #title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #controls {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .panel-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+  }
+  
+  #traffic-controls,
+  #map-type-controls,
+  #search-controls,
+  #route-controls {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+    margin-right: 10px;
+  }
+  
+  .select-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background-color: #2DB400; /* 네이버 스타일의 초록색 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1E8C00; /* 더 진한 초록색으로 변화 */
+  }
+  
+  .btn i {
+    margin-right: 5px;
+  }
+  
+  #result {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #team-info {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #team-info h3 {
+    margin-top: 0;
+    color: #2DB400; /* 네이버 스타일의 초록색 */
+  }
+  
+  #team-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
